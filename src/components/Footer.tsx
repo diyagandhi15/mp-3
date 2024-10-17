@@ -5,9 +5,11 @@ const FooterWrapper = styled.footer`
     color: white;
     background-color: #336282;
     padding: 5px;
-    position: relative; 
     font-size: 10px;
-    text-align: left; 
+    text-align: left;
+    position: relative; 
+    bottom: 0;
+    width: 100%; 
     
 `;
 

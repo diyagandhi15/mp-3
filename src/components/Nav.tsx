@@ -12,19 +12,19 @@ const NavList = styled.ul`
     display: flex;
     justify-content: center;
 
-    /* Responsive Styles for Screens Smaller Than 750px */
-    @media screen and (max-width: 750px) {
-        flex-direction: row;
+    // /* Responsive Styles for Screens Smaller Than 750px */
+    // @media screen and (max-width: 750px) {
+    //     flex-direction: row;
         
-        li {
-            margin: 5px;
-        }
+    //     li {
+    //         margin: 5px;
+    //     }
 
-        li a {
-            padding: 5px calc(2px + 1vw); /* Adjust padding for smaller screens */
-            font-size: calc(6px + 1vw); /* Dynamically adjust font size */
-            white-space: nowrap; /* Ensure text stays on one line */
-        }
+    //     li a {
+    //         padding: 5px calc(2px + 1vw); /* Adjust padding for smaller screens */
+    //         font-size: calc(6px + 1vw); /* Dynamically adjust font size */
+    //         white-space: nowrap; /* Ensure text stays on one line */
+    //     }
     }
 `;
 
