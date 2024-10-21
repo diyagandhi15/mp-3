@@ -1,4 +1,5 @@
 import { createBrowserRouter, Route, Routes, RouterProvider } from 'react-router-dom';
+import styled from 'styled-components';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Navigation from './components/Nav';
@@ -9,11 +10,21 @@ import Achievements from './pages/Achievements';
 import Education from './pages/Education'; 
 import Employment from './pages/Employment'; 
 
+const Container = styled.div`
+  display: flex;
+  flex-direction: row;
+
+  @media screen and (max-width: 1700px) { 
+  flex-direction: column;
+  }
+
+`;
 
 const Root = () => {
   return (
     <div>
       <Header />
+      <Container>
       <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -23,6 +34,7 @@ const Root = () => {
         <Route path="achievements" element={<Achievements />} />
         <Route path="projects" element={<Projects />} />
       </Routes>
+      </Container>
       <Footer />
     </div>
   )
