@@ -15,7 +15,7 @@ const StyledH1 = styled.h1`
     text-align: left;
 
     @media screen and (max-width: 750px) {
-        text-align: center; 
+        text-align: center; /* Center align heading for smaller screens */
     }
 `;
 

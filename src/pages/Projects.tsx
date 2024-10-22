@@ -8,6 +8,7 @@ const Heading1 = styled.h1`
     margin-top: 20px; 
 `;
 
+// Styled components for Calculator
 const CalculatorContainer = styled.div`
   max-width: 1000px;
   margin: 20px auto;
@@ -53,6 +54,7 @@ const CalculatorContainer = styled.div`
   }
 `;
 
+// Styled components for Age Restricted
 const AgeRestrictedContainer = styled.div`
   max-width: 1000px;
   margin: 20px auto;
@@ -98,21 +100,22 @@ const AgeRestrictedContainer = styled.div`
   }
 `;
 
-export default function Projects() {
+function Projects() {
   return (
     <div className="main-content">
       <Heading1>Projects</Heading1>
 
-      
+      {/* Calculator Component */}
       <CalculatorContainer>
         <Calculator />
       </CalculatorContainer>
 
-     
+      {/* Age Restricted Component */}
       <AgeRestrictedContainer>
         <AgeRestricted />
       </AgeRestrictedContainer>
 
+      {/* Other Projects */}
       <ul style={{ listStyle: 'none', borderLeft: '5px solid #dce79a', paddingLeft: '10px', marginLeft: '40px' }}>
         <li>
           <strong>College Kitchen Website</strong>
@@ -137,3 +140,4 @@ export default function Projects() {
   );
 }
 
+export default Projects;
