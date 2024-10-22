@@ -116,7 +116,7 @@ function Projects() {
       </AgeRestrictedContainer>
 
       {/* Other Projects */}
-      <ul style={{ listStyle: 'none', borderLeft: '5px solid #dce79a', paddingLeft: '10px' }}>
+      <ul style={{ listStyle: 'none', borderLeft: '5px solid #dce79a', paddingLeft: '10px', marginLeft: '40px' }}>
         <li>
           <strong>College Kitchen Website</strong>
           <ul style={{ listStyle: 'circle', paddingLeft: '20px' }}>
@@ -127,7 +127,7 @@ function Projects() {
         </li>
       </ul>
 
-      <ul style={{ listStyle: 'none', borderLeft: '5px solid #dce79a', paddingLeft: '10px' }}>
+      <ul style={{ listStyle: 'none', borderLeft: '5px solid #dce79a', paddingLeft: '10px', marginLeft: '40px' }}>
         <li>
           <strong>Portfolio Website</strong>
           <ul style={{ listStyle: 'circle', paddingLeft: '20px' }}>

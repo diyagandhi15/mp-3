@@ -12,19 +12,27 @@ import Employment from './pages/Employment';
 
 const Container = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  min-height: 100vh;
 
-  @media screen and (max-width: 1700px) { 
+  @media screen and (max-width: 700px) { 
   flex-direction: column;
   }
 
 `;
 
+const Content = styled.div`
+  flex-grow: 1;
+`;
+
 const Root = () => {
   return (
     <div>
-      <Header />
+
       <Container>
+
+      <Header />
+      <Content>
       <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -34,8 +42,11 @@ const Root = () => {
         <Route path="achievements" element={<Achievements />} />
         <Route path="projects" element={<Projects />} />
       </Routes>
-      </Container>
+      </Content>
       <Footer />
+
+      </Container>
+
     </div>
   )
 }

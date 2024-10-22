@@ -92,12 +92,12 @@ function References() {
             <tr>
               <StyledTd>Preethy Gandhi</StyledTd>
               <StyledTd>Mother</StyledTd>
-              <StyledTd>973 432 9698</StyledTd>
+              <StyledTd><a href="tel:973 432 0551">973 432 9698</a> </StyledTd>
             </tr>
             <tr>
               <StyledTd>Satnam Gandhi</StyledTd>
               <StyledTd>Father</StyledTd>
-              <StyledTd>973 432 0551</StyledTd>
+              <StyledTd> <a href="tel:973 432 0551">973 432 0551</a></StyledTd>
             </tr>
           </tbody>
         </StyledTable>

@@ -10,7 +10,7 @@ function Achievements() {
     return (
       <div className="main-content">
         <Heading1>Achievements</Heading1>
-        <ul style={{ listStyle: 'none', borderLeft: '5px solid #dce79a', paddingLeft: '10px' }}>
+        <ul style={{ listStyle: 'none', borderLeft: '5px solid #dce79a', paddingLeft: '10px', marginLeft: '40px' }}>
           <li>
             <strong>Dean's List Spring 2024</strong>
             <ul style={{ listStyle: 'circle', paddingLeft: '20px' }}>

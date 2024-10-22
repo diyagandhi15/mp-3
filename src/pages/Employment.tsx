@@ -10,7 +10,7 @@ function Employment() {
     return (
       <div className="main-content">
         <Heading1>Employment</Heading1>
-        <ul style={{ listStyle: 'none', borderLeft: '5px solid #dce79a', paddingLeft: '10px' }}>
+        <ul style={{ listStyle: 'none', borderLeft: '5px solid #dce79a', paddingLeft: '10px', marginLeft: '40px'}}>
           <li>
             <strong>Girl Scouts IT Program Management Intern</strong> <em>June 2024 - August 2024</em>
             <ul style={{ listStyle: 'circle', paddingLeft: '20px' }}>
