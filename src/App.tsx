@@ -17,8 +17,17 @@ const Container = styled.div`
 
 `;
 
+const NavContainer = styled.div`
+  flex-grow: 1;
+`; 
+
 const Content = styled.div`
   flex-grow: 1;
+  margin-left: 250px; /* Adds space for the sidebar */
+
+  @media screen and (max-width: 750px) {
+    margin-left: 0; /* Remove margin on smaller screens */
+  }
 `;
 
 const Root = () => {
@@ -26,11 +35,12 @@ const Root = () => {
     <div>
 
       <Container>
-
       <Header />
+      <NavContainer>      
+        <Navigation />
+      </NavContainer>
+     
       <Content>
-      
-      <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="employment" element={<Employment />} />
@@ -56,4 +66,3 @@ export default function App() {
     <RouterProvider router={router} />
   );
 }
-

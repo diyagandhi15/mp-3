@@ -11,7 +11,7 @@ const Heading1 = styled.h1`
 // Styled components for Calculator
 const CalculatorContainer = styled.div`
   max-width: 1000px;
-  margin: 20px auto;
+  margin: 20px;
   padding: 10px;
   border-radius: 10px;
   background-color: #fff;
@@ -57,7 +57,7 @@ const CalculatorContainer = styled.div`
 // Styled components for Age Restricted
 const AgeRestrictedContainer = styled.div`
   max-width: 1000px;
-  margin: 20px auto;
+  margin: 20px;
   padding: 10px;
   border-radius: 10px;
   background-color: #fff;

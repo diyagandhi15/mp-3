@@ -4,14 +4,14 @@ import styled from 'styled-components';
 const NavbarWrapper = styled.nav`
     background-color: #4079a0;
     padding: 10px 0;
-    width: 25%;
+    width: 250px;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     
     @media screen and (max-width: 750px) {
-    width: 100%;
-    height: 40px;
-    position: relative;
+        width: 100%;
+        height: auto;  
+        position: relative; 
     }
     
 `;
@@ -20,21 +20,25 @@ const NavList = styled.ul`
     list-style: none;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    
+    @media screen and (max-width: 750px) {
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
-     @media screen and (max-width: 750px) {
-     flex-direction: row
-}
+    }
     
 `;
 
+
 const NavItem = styled.li`
-    margin: 20px 15px;
-    @media screen and (max-width: 750px) {
-
-   
-
-        margin: 0px 10px;
-`;
+    margin: 35px;
+    padding: 3px;
+    
+        @media screen and (max-width: 750px) {
+            margin: 0px 7px;
+        }       
+    `;
 
 const NavLink = styled(Link)`
     color: white;
@@ -44,8 +48,11 @@ const NavLink = styled(Link)`
     &:hover {
         color: #dce79a;
     }
-`;
 
+    @media screen and (max-width: 750px) {
+        font-size: 10px; /* Smaller font size for smaller screens */
+    }
+`;
 
 
 function Navigation() {

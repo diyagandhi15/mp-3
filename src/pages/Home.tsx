@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import profilePic from '../assets/profile.png';
 
-// Styled Components
 const MainContent = styled.div`
     text-align: center; 
     margin: 20px; 
