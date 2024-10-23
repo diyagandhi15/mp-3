@@ -3,14 +3,15 @@ import styled from "styled-components";
 const Heading1 = styled.h1`
     text-align: center; 
     color: #2c3e50; 
-    margin-top: 20px; 
+    margin-top: -250px; 
 `;
 
 function Employment() {
     return (
-      <div className="main-content">
+        <>
         <Heading1>Employment</Heading1>
-        <ul style={{ listStyle: 'none', borderLeft: '5px solid #dce79a', paddingLeft: '10px', marginLeft: '40px'}}>
+        <div style={{fontSize: 'calc(9px + .5vw)'}}>
+        <ul style={{ listStyle: 'none', borderLeft: '5px solid #dce79a', paddingLeft: '10px', marginLeft: '80px', marginRight: '20px'}}>
           <li>
             <strong>Girl Scouts IT Program Management Intern</strong> <em>June 2024 - August 2024</em>
             <ul style={{ listStyle: 'circle', paddingLeft: '20px' }}>
@@ -30,6 +31,7 @@ function Employment() {
           </li>
         </ul>
       </div>
+      </>
     );
   }
   

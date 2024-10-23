@@ -1,9 +1,22 @@
 import styled from 'styled-components';
 import profilePic from '../assets/profile.png';
 
-const MainContent = styled.div`
+const Heading1 = styled.h1`
     text-align: center; 
-    margin: 20px; 
+    color: #2c3e50; 
+    margin-top: -175px; 
+`;
+
+const MainContent = styled.div`
+  margin: 20px;
+  margin-left: 80px;
+  margin-right: 20px;
+
+      @media screen and (max-width: 750px) {
+
+      margin-left: 20px;
+
+}
 `;
 
 const ProfileImage = styled.img`
@@ -14,11 +27,6 @@ const ProfileImage = styled.img`
     border-radius: 70px; 
 `;
 
-const Heading1 = styled.h1`
-    text-align: center; 
-    color: #2c3e50; 
-    margin-top: 20px; 
-`;
 
 const Paragraph = styled.p`
     text-align: center; 

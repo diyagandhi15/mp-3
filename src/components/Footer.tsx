@@ -8,7 +8,7 @@ const FooterWrapper = styled.footer`
     text-align: left;
     position: relative; 
     bottom: 0;
-    // width: 100%; 
+    display: flex;
 `;
 
 export default function Footer() {

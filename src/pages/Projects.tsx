@@ -8,7 +8,15 @@ const Heading1 = styled.h1`
     margin-top: 20px; 
 `;
 
-// Styled components for Calculator
+const ProjectContent = styled.div`
+
+margin-left: 50px;
+      @media screen and (max-width: 750px) {
+
+      margin-left: 0px;
+`;
+
+
 const CalculatorContainer = styled.div`
   max-width: 1000px;
   margin: 20px;
@@ -54,7 +62,6 @@ const CalculatorContainer = styled.div`
   }
 `;
 
-// Styled components for Age Restricted
 const AgeRestrictedContainer = styled.div`
   max-width: 1000px;
   margin: 20px;
@@ -102,20 +109,20 @@ const AgeRestrictedContainer = styled.div`
 
 function Projects() {
   return (
-    <div className="main-content">
+    <ProjectContent>
       <Heading1>Projects</Heading1>
 
-      {/* Calculator Component */}
+      
       <CalculatorContainer>
         <Calculator />
       </CalculatorContainer>
 
-      {/* Age Restricted Component */}
+      
       <AgeRestrictedContainer>
         <AgeRestricted />
       </AgeRestrictedContainer>
 
-      {/* Other Projects */}
+      
       <ul style={{ listStyle: 'none', borderLeft: '5px solid #dce79a', paddingLeft: '10px', marginLeft: '40px' }}>
         <li>
           <strong>College Kitchen Website</strong>
@@ -136,7 +143,7 @@ function Projects() {
           </ul>
         </li>
       </ul>
-    </div>
+    </ProjectContent>
   );
 }
 

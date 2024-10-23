@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Heading1 = styled.h1`
     text-align: center; 
     color: #2c3e50; 
-    margin-top: 20px; 
+    margin-top: -20px; 
 `;
 
 const Heading4 = styled.h4`
@@ -12,6 +12,14 @@ const Heading4 = styled.h4`
 
 const MainContent = styled.div`
   margin: 20px;
+  margin-left: 80px;
+  margin-right: 20px;
+
+      @media screen and (max-width: 750px) {
+
+      margin-left: 20px;
+
+}
 `;
 
 const TableContainer = styled.div`

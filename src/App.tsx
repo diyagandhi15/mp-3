@@ -14,7 +14,6 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-
 `;
 
 const NavContainer = styled.div`
@@ -23,10 +22,10 @@ const NavContainer = styled.div`
 
 const Content = styled.div`
   flex-grow: 1;
-  margin-left: 250px; /* Adds space for the sidebar */
+  margin-left: 250px; 
 
   @media screen and (max-width: 750px) {
-    margin-left: 0; /* Remove margin on smaller screens */
+    margin-left: 0; 
   }
 `;
 

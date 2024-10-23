@@ -7,6 +7,7 @@ const HeaderWrapper = styled.header`
     padding: 5px;
     font-size: 15px;
     box-sizing: border-box;
+    z-index: 1;
 `;
 
 const StyledH1 = styled.h1`
@@ -15,7 +16,7 @@ const StyledH1 = styled.h1`
     text-align: left;
 
     @media screen and (max-width: 750px) {
-        text-align: center; /* Center align heading for smaller screens */
+        text-align: center; 
     }
 `;
 
@@ -24,8 +25,7 @@ const StyledP = styled.p`
     text-align: left;
 
     @media screen and (max-width: 750px) {
-        text-align: center; /* Center align paragraph for smaller screens */
-    }
+        text-align: center; 
 `;
 
 export default function Header() {
